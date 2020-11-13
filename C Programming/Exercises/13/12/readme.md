@@ -10,13 +10,13 @@ void get_extension(const char *file_name, char *extension);
 	
 ```c
 	  
-void get_extention(const char *file_name, char *extention)
+void get_extention(const char *file_name, char *extension)
 {
     int i = strlen(file_name);
     file_name = file_name + i;
     while(*file_name != '.')
         file_name--;
     file_name++;
-    strcpy(extention, file_name);
+    strcpy(extension, file_name);
 }
 ```
