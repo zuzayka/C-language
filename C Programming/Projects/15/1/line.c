@@ -4,7 +4,8 @@
  * Copyright (c) 2008, 1996 W. W. Norton & Company, Inc. *
  * All rights reserved.                                  *
  * This program may be freely distributed for class use, *
- * provided that this copyright notice is retained.      *
+ * provided that this copyright notice is retained.
+ * Project edited by zuzayka.
  *********************************************************/
 
 /* line.c (Chapter 15, page 364) */
@@ -45,8 +46,8 @@ int space_remaining(void)
 
 void write_line(void)
 {
-  int extra_spaces, spaces_to_insert, i, j, min_s_t_i, tail_s_t_i;
-
+  int extra_spaces, spaces_to_insert, i, j, min_s_t_i, tail_s_t_i; // min_s_t_i smallest spaces to insert,
+                                                                   // tail_s_t_i tail spaces to insert
   extra_spaces = MAX_LINE_LEN - line_len;
   min_s_t_i = extra_spaces / (num_words - 1);
   tail_s_t_i = extra_spaces % (num_words - 1);
@@ -62,9 +63,7 @@ void write_line(void)
         else spaces_to_insert = min_s_t_i;
       for (j = 1; j <= spaces_to_insert + 1; j++)
         putchar(' ');
-      //extra_spaces -= spaces_to_insert;
-      //num_words--;
-    }
+     }
   }
   putchar('\n');
 }
@@ -74,3 +73,4 @@ void flush_line(void)
   if (line_len > 0)
     puts(line);
 }
+
