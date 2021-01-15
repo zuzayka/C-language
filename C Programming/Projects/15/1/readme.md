@@ -5,4 +5,4 @@ the words closer to the end of a line tend to have slightly wider gaps between t
 Improve the program by having write_line alternate between putting the larger gaps at the end of the line and putting them at the beginning of the line.
 
 ### Solution
-All files than `line.c` have no changes. For compiling and linking I use QtCreator with CMake. See `line.c`, `CMakeLists.txt`
+All files than `line.c` have no changes. For compiling and linking I use `QtCreator` with `CMake`. See `line.c`, `CMakeLists.txt`
