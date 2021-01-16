@@ -7,4 +7,4 @@ functions are in a separate file named `quicksort.c`. Create a header file named
 
 ### Solution
 
-For compiling and linking I use `QtCreator` with `CMake`. See `main.c`, `quicksort.c`, `quicksort.h`, `quicks.c` and `CMakeLists.txt`.
+For compiling and linking I use `QtCreator` with `CMake` build system. See `main.c`, `quicksort.c`, `quicksort.h`, `quicks.c` and `CMakeLists.txt`.
