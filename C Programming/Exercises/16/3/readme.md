@@ -51,15 +51,15 @@ double make_complex(double complex)
 #### (d)
 
 ```c
-typedef struct complex
+struct complex
 {
     double real;
     double imaginary;
-} Cplx;
+};
 
-Cplx add_complex(Cplx complex1, Cplx complex2)
+struct complex add_complex(struct complex complex1, struct complex complex2)
 {
-    Cplx complex3;
+    struct complex complex3;
     complex3 .real = complex1 .real + complex2 .real;
     complex3 .imaginary = complex1 .imaginary + complex2 .imaginary;
     return complex3;
