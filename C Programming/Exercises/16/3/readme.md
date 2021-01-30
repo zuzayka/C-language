@@ -59,12 +59,10 @@ typedef struct complex
 
 Cplx add_complex(Cplx complex1, Cplx complex2)
 {
-Cplx complex3;
-complex3 .real = complex1 .real + complex2 .real;
-complex3 .imaginary = complex1 .imaginary + complex2 .imaginary;
-return complex3;
-}
+    Cplx complex3;
+    complex3 .real = complex1 .real + complex2 .real;
+    complex3 .imaginary = complex1 .imaginary + complex2 .imaginary;
+    return complex3;
 }
 ```
 
-NB: Again, C99+ only.
