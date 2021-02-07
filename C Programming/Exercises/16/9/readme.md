@@ -19,4 +19,4 @@ by 0.7 (with the result truncated to an integer).
 ### Solution
 #### (d) (e)
 I don't know how about `C99`, but in `C11` functions such type as
-`struct color brighter(struct color c)` or `struct color darker(struct color c)` not run.
+`struct color brighter(struct color c)` or `struct color darker(struct color c)` can not return sructure 	variables values.
