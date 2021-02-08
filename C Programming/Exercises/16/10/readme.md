@@ -53,9 +53,6 @@ int main()
     printf("Enter upper left point x y: ");
     scanf("%d %d", &upper_left .x,  &upper_left .y);
 
-
-    //printf("Rectangle square: %d\n", square(r));
-
     center_point = rectangle_center(center_point);
 
     printf("%d %d\n", center_point .x, center_point .y);
