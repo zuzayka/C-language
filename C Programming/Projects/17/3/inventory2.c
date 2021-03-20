@@ -136,8 +136,6 @@ void insert(void)
  *         returns prematurely if the part not exists     *
  **********************************************************/
 
-/*
-
 void erase(void)
 {
   struct part *cur, *prev, *ep;
@@ -166,29 +164,6 @@ void erase(void)
         printf("Part %d erased\n", ep->number);
   free(cur);
   return;
-}
-
-*/
-
-void erase(void)
-{
-    struct part **pp = &inventory;
-    struct part *temp;
-    int n;
-    printf("Enter part number: ");
-    scanf("%d", &n);
-
-    while(*pp) {
-        if ((*pp)->number == n) {
-            temp = *pp;
-            *pp = (*pp)->next;
-            free(temp);
-            return;
-        }
-        pp = &(*pp)->next;
-    }
-    printf("Part number %d not found in database\n", n);
-    return;
 }
 
 /**********************************************************
